@@ -27,7 +27,7 @@
 		<div class="row">
 			<div class="col-xs-12">
 				<div class="container">
-					<img class="img-sidebar-background" src=" GymAppAssets/background.jpg" alt="HTML5 Icon">
+					<img class="img-sidebar-background" src=" assets/img/background.jpg" alt="HTML5 Icon">
 					<div class="sidebar-top-text">Fitness Freak</div>
 					<div class="sidebar-central-text text-justify">
 						<h1>Gym Session:6 a.m-7 a.m</h1>
@@ -42,7 +42,7 @@
 								</div>
 							</div>
 							<div class="col-xs-2">
-								<img class="addInformation-plusSign" src=" GymAppAssets/Ic_add_circle_outline_48px.png" alt="HTML5 Icon">
+								<img class="addInformation-plusSign" src=" assets/img/Ic_add_circle_outline_48px.png" alt="HTML5 Icon">
 							</div>
 						</div>
 					</div>
@@ -50,7 +50,7 @@
 					<div class="sidebar-last-text">
 						<div class="row">
 							<div class="col-xs-4">
-								<img class="invisible-user" src=" GymAppAssets/Antu_im-invisible-user.png" alt="HTML5 Icon">
+								<img class="invisible-user" src=" assets/img/Antu_im-invisible-user.png" alt="HTML5 Icon">
 							</div>
 							<div class="col-xs-8">
 								<div class="text-kripesh text-justify">
@@ -93,10 +93,11 @@
 					<div class="col-xs-12">
 						<div class="cardio">
 							<div class="container">
-								<a href="gymAppCardio.html">
-									<img class="img-responsive" src=" GymAppAssets/cardio.jpg" alt="HTML5 Icon">
+								<a href="gymAppCardio.php">
+									<img class="img-responsive" src=" assets/img/cardio.jpg" alt="HTML5 Icon">
+								
+								<div class="centered">TREADMILL</div>
 								</a>
-								<div class="centered">CARDIO</div>
 							</div>
 						</div>
 					</div>
@@ -106,7 +107,7 @@
 					<div class="col-xs-12">
 						<div class="chest">
 							<div class="container">
-								<img class="img-responsive" src=" GymAppAssets/chest.jpg" alt="HTML5 Icon">
+								<img class="img-responsive" src=" assets/img/chest.jpg" alt="HTML5 Icon">
 								<div class="centered">CHEST</div>
 							</div>
 						</div>
@@ -117,7 +118,7 @@
 					<div class="col-xs-12">
 						<div class="legs">
 							<div class="container">
-								<img class="img-responsive" src=" GymAppAssets/legs.jpg" alt="HTML5 Icon">
+								<img class="img-responsive" src=" assets/img/legs.jpg" alt="HTML5 Icon">
 								<div class="centered">LEGS</div>
 							</div>
 						</div>
@@ -129,7 +130,7 @@
 					<div class="col-xs-12">
 						<div class="lowerBody">
 							<div class="container">
-								<img class="img-responsive" src=" GymAppAssets/lowerBody.jpg" alt="HTML5 Icon">
+								<img class="img-responsive" src=" assets/img/lowerBody.jpg" alt="HTML5 Icon">
 								<div class="centered">LOWER BODY</div>
 							</div>
 						</div>
@@ -141,7 +142,7 @@
 					<div class="col-xs-12">
 						<div class="upperBody">
 							<div class="container">
-								<img class="img-responsive" src=" GymAppAssets/upperBody.jpg" alt="HTML5 Icon">
+								<img class="img-responsive" src=" assets/img/upperBody.jpg" alt="HTML5 Icon">
 								<div class="centered">UPPER BODY</div>
 							</div>
 						</div>
@@ -153,7 +154,7 @@
 					<div class="col-xs-12">
 						<div class="aerobics">
 							<div class="container">
-								<img class="img-responsive" src=" GymAppAssets/aerobics.jpg" alt="HTML5 Icon">
+								<img class="img-responsive" src=" assets/img/aerobics.jpg" alt="HTML5 Icon">
 								<div class="centered">AEROBICS</div>
 							</div>
 						</div>
