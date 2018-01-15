@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 14, 2018 at 08:56 AM
--- Server version: 10.1.9-MariaDB
--- PHP Version: 5.6.15
+-- Generation Time: Jan 15, 2018 at 06:02 PM
+-- Server version: 10.1.13-MariaDB
+-- PHP Version: 5.5.37
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -37,8 +37,9 @@ CREATE TABLE `categories` (
 --
 
 INSERT INTO `categories` (`categoryID`, `categoryName`, `coverPhoto`) VALUES
-(1, 'Cardio', ''),
-(2, 'Chest', '');
+(1, 'Cardio', 'assets/img/cardio.jpg'),
+(2, 'Chest', 'assets/img/chest.jpg'),
+(3, 'Legs', 'assets/img/legs.jpg');
 
 -- --------------------------------------------------------
 
@@ -47,11 +48,11 @@ INSERT INTO `categories` (`categoryID`, `categoryName`, `coverPhoto`) VALUES
 --
 
 CREATE TABLE `equipments` (
-  `rowID` int(11) NOT NULL,
   `equipmentID` int(11) NOT NULL,
   `categoryID` int(11) NOT NULL,
   `equipmentName` varchar(150) NOT NULL,
-  `equipmentPhoto` varchar(350) NOT NULL,
+  `equipmentPhoto` text NOT NULL,
+  `equipmentCoverPhoto` varchar(350) NOT NULL,
   `equipmentCount` int(11) NOT NULL,
   `approxUseTime` int(11) NOT NULL,
   `waitCount` int(11) NOT NULL DEFAULT '0'
@@ -61,9 +62,10 @@ CREATE TABLE `equipments` (
 -- Dumping data for table `equipments`
 --
 
-INSERT INTO `equipments` (`rowID`, `equipmentID`, `categoryID`, `equipmentName`, `equipmentPhoto`, `equipmentCount`, `approxUseTime`, `waitCount`) VALUES
-(0, 1, 1, 'Treadmill', '', 3, 15, 3),
-(0, 2, 2, 'Bench Press', '', 3, 15, 5);
+INSERT INTO `equipments` (`equipmentID`, `categoryID`, `equipmentName`, `equipmentPhoto`, `equipmentCoverPhoto`, `equipmentCount`, `approxUseTime`, `waitCount`) VALUES
+(1, 1, 'Treadmill', '', 'assets/img/treadmill_1.jpg', 3, 15, 0),
+(2, 2, 'Bench Press', '', '', 3, 15, 5),
+(3, 1, 'Spin Bike', '', 'assets/img/spin_bike_3.jpg', 5, 10, 0);
 
 -- --------------------------------------------------------
 
@@ -131,12 +133,12 @@ ALTER TABLE `usetime`
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `categoryID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `categoryID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `equipments`
 --
 ALTER TABLE `equipments`
-  MODIFY `equipmentID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `equipmentID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `usetime`
 --
