@@ -1,0 +1,32 @@
+body {
+	background-color: #e8e8e8;
+}
+h1{
+	font-size: 36px;
+}
+h2{
+	font-size: 25px;
+}
+h1:after {
+	content: " ";
+	display: block;
+	width: 100px;
+	height: 2px;
+	margin: 10px 0 20px;
+	/*margin: 20px auto 20px;*/
+	background-color: #999999;
+}
+h2:after {
+	content: " ";
+	display: block;
+	width: 100px;
+	height: 2px;
+	margin: 10px 0 20px; /*top left bottom right*/
+	background: #555555;
+}
+a:hover, a:visited{
+	text-decoration: none;
+}
+.sidebar{
+	position: fixed;
+}
