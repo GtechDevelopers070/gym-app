@@ -104,7 +104,7 @@
 
 			$displayCategories->rowWise($db,  //database connection object
 									"categories", //table to hit
-									"gymApp.php", //link to drill
+									"gymapp.php", //link to drill
 									"categoryID", //primary key of table to hit
 									"coverPhoto",  //photo column of the table
 									"categoryName"  //text to display

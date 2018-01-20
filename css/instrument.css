@@ -35,12 +35,14 @@
     height: 400px;
     margin: 70px 0 0 0;
 
+
 }
 
 #equipment{
     border: 2px solid #5b2d2d;
     height: 100%;
     width: 100%;
+    background-color: white;
 }
 
 
