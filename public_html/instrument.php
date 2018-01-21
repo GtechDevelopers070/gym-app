@@ -76,7 +76,7 @@
 								</div>
 								<br/>
 								<div class="circleDescData">
-									<p>10 people</p>
+									<p id="waitCount">10 people</p>
 								</div>
 							</div>
 						</center>
@@ -121,18 +121,20 @@
 					</div>
 				</div>
 
-				
+				<div class="row">
+					<button id="btn_update" class="btn btn-primary">Update Wait Count</button>
+				</div>
 						<!-- <?php
 		
-							include('buttonEffects.php');
+							// include('buttonEffects.php');
 
 	 					?> -->
 						<!-- <h1 class="cardio-mainText">Treadmill</h1>
 						<h1 class="cardio-text">Current queue of: 5 Person</h1>
 						<h1 class="cardio-text">Average waiting time: 3 Minutes</h1>
 						<h1 class="cardio-text">Busy period: 6 a.m-7a.m</h1> -->
-					</div>
-				</div>
+		</div>
+	</div>
 
 
 				<!-- <form action = "#" method="POST">
@@ -142,8 +144,8 @@
 				</center>
 				</form>
  -->
-			</div>
-		</div>
+<!-- 			</div>
+		</div> -->
 		
 		<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script> -->
 		<!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script> -->
@@ -163,12 +165,15 @@
 				});
 
 				$(document).ready(function(){
-					// alert('Check');
 					// Animate loader off screen
 					$(".se-pre-con").fadeOut("slow");
-					// $(".se-pre-con").addClass("animated pulse");
-					// $(".categoryBox").addClass("animated pulse");
-					// alert('Check');
+
+					//auto refresh wait counts and avaerage wait time every 1 sec
+
+					setInterval(function(){
+						$("#waitCount").text("Check");
+					}, 1000);
+
 				});
 			
 				function getCenter(elementID){
