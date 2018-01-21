@@ -95,8 +95,8 @@
 
 		<!-- Categories from Database -->
 		<?php
-			include('dbConnect.php');
-			include('classes.php');
+			include('../includes/dbConnect.php');
+			include('../includes/classes.php');
 
 			//display category object 
 
