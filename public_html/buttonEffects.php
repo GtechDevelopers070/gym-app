@@ -20,10 +20,10 @@
 				</div>
 				<div class="row">
 					<div class="col-xs-6">
-						<center><button class="btn btn-primary" style="height: 300px; width: 300px; line-height: 300px; border-radius: 50%;" name="deviceStart" value="1">Start</button></center>
+						<center><button class="btn btn-primary" style="height: 30vw;   width: 30vw; line-height: 30vw;   border-radius: 50%;" name="deviceStart" value="1">Start</button></center>
 					</div>
 					<div class="col-xs-6">
-					<center><button class="btn btn-danger" style="height: 300px; width: 300px; line-height: 300px; border-radius: 50%;" name="deviceStop" value="1">Stop</button></center>
+					<center><button class="btn btn-danger" style="height: 30vw;   width: 30vw; line-height: 30vw;   border-radius: 50%;" name="deviceStop" value="1">Stop</button></center>
 					</div>
 				</div>
 
@@ -36,10 +36,10 @@
 				</div>
 				<div class="row">
 					<div class="col-xs-6">
-						<center><button class="btn btn-primary" style="height: 300px; width: 300px; line-height: 300px; border-radius: 50%;" name="deviceStart" value="3">Start</button></center>
+						<center><button class="btn btn-primary" style="height: 30vw;   width: 30vw; line-height: 30vw;   border-radius: 50%;" name="deviceStart" value="3">Start</button></center>
 					</div>
 					<div class="col-xs-6">
-					<center><button class="btn btn-danger" style="height: 300px; width: 300px; line-height: 300px; border-radius: 50%;" name="deviceStop" value="3">Stop</button></center>
+					<center><button class="btn btn-danger" style="height: 30vw;   width: 30vw; line-height: 30vw;   border-radius: 50%;" name="deviceStop" value="3">Stop</button></center>
 					</div>
 				</div>
 
@@ -52,10 +52,10 @@
 				</div>
 				<div class="row">
 					<div class="col-xs-6">
-						<center><button class="btn btn-primary" style="height: 300px; width: 300px; line-height: 300px; border-radius: 50%;" name="deviceStart" value="2">Start</button></center>
+						<center><button class="btn btn-primary" style="height: 30vw;   width: 30vw; line-height: 30vw;   border-radius: 50%;" name="deviceStart" value="2">Start</button></center>
 					</div>
 					<div class="col-xs-6">
-					<center><button class="btn btn-danger" style="height: 300px; width: 300px; line-height: 300px; border-radius: 50%;" name="deviceStop" value="2">Stop</button></center>
+					<center><button class="btn btn-danger" style="height: 30vw;   width: 30vw; line-height: 30vw;   border-radius: 50%;" name="deviceStop" value="2">Stop</button></center>
 					</div>
 				</div>
 
