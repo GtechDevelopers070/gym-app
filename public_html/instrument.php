@@ -25,6 +25,25 @@
 </head>
 <body>
 
+
+	<?php
+		include('../includes/dbConnect.php');
+		include('../includes/classes.php');		
+
+		if(isset($_GET['viewItem']))
+		{
+			$equipmentID = $db->real_escape_string($_GET['viewItem']);
+		}
+		else{
+			$equipmentID = '1';
+		}
+
+		echo '<script> let equipmentID = '. $equipmentID .';</script>';
+
+		// echo "<script> alert(equipmentID); </script>";
+
+	?>
+
 	<div class="se-pre-con">
 		<center>
 			<div class="loadingIcon">
@@ -76,7 +95,7 @@
 								</div>
 								<br/>
 								<div class="circleDescData">
-									<p id="waitCount">10 people</p>
+									<p><span id="waitCount"></span> people</p>
 								</div>
 							</div>
 						</center>
@@ -98,11 +117,11 @@
 						
 						<center>
 							<div id="averageID" class="circleAttr">
-								<div class="circleDesc"><p>Average Use</p></div>
+								<div class="circleDesc"><p>Approx Wait</p></div>
 								<br/>
-								<div class="circleDescData"><p >15 min</p></div>
-								
-								
+								<div class="circleDescData">
+									<p><span id="approxWaitTime"></span> min</p>
+								</div>								
 							</div>
 						</center>
 					</div>
@@ -121,9 +140,6 @@
 					</div>
 				</div>
 
-				<div class="row">
-					<button id="btn_update" class="btn btn-primary">Update Wait Count</button>
-				</div>
 						<!-- <?php
 		
 							// include('buttonEffects.php');
@@ -171,7 +187,22 @@
 					//auto refresh wait counts and avaerage wait time every 1 sec
 
 					setInterval(function(){
-						$("#waitCount").text("Check");
+						$("#waitCount").load('../ajax/waitCountFetch.php?viewItem='+equipmentID+'  #fetchedWaitCount' , function( response, status, xhr ) {
+							if ( status == "error" ) {
+							    var msg = "Sorry but there was an error: ";
+							    alert( msg + xhr.status + " " + xhr.statusText );
+							  }
+							}
+						);
+
+						$("#approxWaitTime").load('../ajax/waitCountFetch.php?viewItem='+equipmentID+'  #approxWaitTime' , function( response, status, xhr ) {
+							if ( status == "error" ) {
+							    var msg = "Sorry but there was an error: ";
+							    alert( msg + xhr.status + " " + xhr.statusText );
+							  }
+							}
+						);
+
 					}, 1000);
 
 				});
