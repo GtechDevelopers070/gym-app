@@ -29,15 +29,20 @@ class displayItems
 							){  
 
 		/* check connection */
-		if (mysqli_connect_errno()) {
-		    err::showMessage("Connect failed: %s\n", mysqli_connect_error());
-		    exit();
-		}
+		// if (mysqli_connect_errno()) {
+		//     err::showMessage("Connect failed: %s\n", mysqli_connect_error());
+		//     exit();
+		// }
 
 		$table = $db->real_escape_string($table);
 
 		$sql = "SELECT * FROM $table";
 		$result = $db->query($sql);
+
+		if (!$result) {
+			err::showMessage("Connect failed: %s\n", $db->error());
+			exit();
+		}
 
 		if ($result->num_rows > 0) {
 		    // output data of each row
