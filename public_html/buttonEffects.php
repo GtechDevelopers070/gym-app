@@ -15,7 +15,23 @@
 			<form method = "POST" action="buttonEffects.php">
 				<div class="row">
 					<div class="col-xs-12">
-						<center><h2>TreadMill</h2></center>
+						<center><h2>Squat Station</h2></center>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-6">
+						<center><button class="btn btn-primary" style="height: 30vw;   width: 30vw; line-height: 30vw;   border-radius: 50%;" name="deviceStart" value="5">Start</button></center>
+					</div>
+					<div class="col-xs-6">
+					<center><button class="btn btn-danger" style="height: 30vw;   width: 30vw; line-height: 30vw;   border-radius: 50%;" name="deviceStop" value="5">Stop</button></center>
+					</div>
+				</div>
+
+				<br/>
+
+				<div class="row">
+					<div class="col-xs-12">
+						<center><h2>Treadmill</h2></center>
 					</div>
 				</div>
 				<div class="row">
@@ -24,22 +40,6 @@
 					</div>
 					<div class="col-xs-6">
 					<center><button class="btn btn-danger" style="height: 30vw;   width: 30vw; line-height: 30vw;   border-radius: 50%;" name="deviceStop" value="1">Stop</button></center>
-					</div>
-				</div>
-
-				<br/>
-
-				<div class="row">
-					<div class="col-xs-12">
-						<center><h2>SpinBike</h2></center>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-6">
-						<center><button class="btn btn-primary" style="height: 30vw;   width: 30vw; line-height: 30vw;   border-radius: 50%;" name="deviceStart" value="3">Start</button></center>
-					</div>
-					<div class="col-xs-6">
-					<center><button class="btn btn-danger" style="height: 30vw;   width: 30vw; line-height: 30vw;   border-radius: 50%;" name="deviceStop" value="3">Stop</button></center>
 					</div>
 				</div>
 
