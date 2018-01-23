@@ -1,13 +1,11 @@
 @font-face {
-  font-family: 'WeblySleekUILight';
+  font-family: 'Raleway';
   src: url('../fonts/weblysleekuil.eot');
   src: url('../fonts/weblysleekuil.eot?#iefix') format('embedded-opentype'),
        url('../fonts/weblysleekuil.woff') format('woff'),
        url('../fonts/weblysleekuil.ttf') format('truetype'),
        url('../fonts/weblysleekuil.svg#WeblySleekUILight') format('svg');
 }
-
-
 
 .backgroundWhite{
     background-color: rgba(255,255,255,0.1);
@@ -24,9 +22,10 @@
 }
 
 .equipmentTitle{
-    font-family: 'WeblySleekUILight',sans-serif;
+    font-family: 'Raleway',sans-serif;
     font-size: 50px;
     font-weight: 500;
+    font-weight: bold;
 }
 
 
@@ -55,13 +54,14 @@
     /*border:2px solid #966363;*/
     box-shadow: 0px 4px 6.951px 0.0489px rgba(0,0,0,0.55) inset;
     background-color: white;
-    font-family: 'WeblySleekUILight',sans-serif;
+    font-family: 'Raleway',sans-serif;
     line-height: 23px;
     font-size: 400;
     background-image : -webkit-linear-gradient(to bottom, #ffffcc 0%, #ccffff 122%);
     background-image : -moz-linear-gradient(to bottom, #ffffcc 0%, #ccffff 122%);
     background-image: -o-linear-gradient(to bottom, #ffffcc 0%, #ccffff 122%);
     background-image: linear-gradient(to bottom, #ffffcc 0%, #ccffff 122%);
+    font-weight: bold;
 }
 
    
@@ -73,6 +73,7 @@
     text-align: center;
     font-size:28px;
     color: white;
+    font-family: 'Raleway',sans-serif;
     background-color: #5b2d2d;
     width: 100%;
     border-top-left-radius: 360px;
@@ -85,10 +86,12 @@
     -moz-box-shadow: 21px 22px 18px -14px rgba(0,0,0,0.18);
     box-shadow: 21px 22px 18px -14px rgba(0,0,0,0.18);
     letter-spacing: 1.2px;
+    font-weight: bold;
 }
 
 .circleDescData{
     font-size: 20px;
+    font-weight: bold;
 }
 
 svg{
