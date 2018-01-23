@@ -81,7 +81,7 @@
 				<!--for search-->
 			
 				<div class="row equipmentTitle">
-					<center>TREADMILL</center>
+					<center>SQUAT STATION</center>
 				</div>
 					
 				<div class="row">
@@ -108,7 +108,7 @@
 
 						<center>
 							<div id="equipmentImageID" class="equipment-image">
-									<img id="equipment" class="img-circle img-responsive" src=" assets/img/trademill.jpg" alt="HTML5 Icon">
+									<img id="equipment" class="img-circle img-responsive" src=" assets/img/squat_station.jpg" alt="HTML5 Icon">
 								</div>
 						</center>
 					</div>

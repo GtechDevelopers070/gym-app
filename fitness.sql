@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 15, 2018 at 06:02 PM
+-- Generation Time: Jan 23, 2018 at 06:51 AM
 -- Server version: 10.1.13-MariaDB
 -- PHP Version: 5.5.37
 
@@ -63,9 +63,10 @@ CREATE TABLE `equipments` (
 --
 
 INSERT INTO `equipments` (`equipmentID`, `categoryID`, `equipmentName`, `equipmentPhoto`, `equipmentCoverPhoto`, `equipmentCount`, `approxUseTime`, `waitCount`) VALUES
-(1, 1, 'Treadmill', '', 'assets/img/treadmill_1.jpg', 3, 15, 0),
+(1, 1, 'Treadmill', '', 'assets/img/treadmill_1.jpg', 3, 15, 2),
 (2, 2, 'Bench Press', '', '', 3, 15, 5),
-(3, 1, 'Spin Bike', '', 'assets/img/spin_bike_3.jpg', 5, 10, 0);
+(3, 1, 'Spin Bike', '', 'assets/img/spin_bike_3.jpg', 5, 10, 1),
+(5, 1, 'Squat Station', '', 'assets/img/squat_station_cover.jpg', 1, 13, 0);
 
 -- --------------------------------------------------------
 
@@ -138,7 +139,7 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT for table `equipments`
 --
 ALTER TABLE `equipments`
-  MODIFY `equipmentID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `equipmentID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `usetime`
 --
